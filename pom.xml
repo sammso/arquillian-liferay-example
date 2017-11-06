@@ -184,7 +184,7 @@
 	</build>
 
 	<modules>
-		<module>arquillian-extension-liferay-example</module>
+		<module>integration-test</module>
 	</modules>
 
 	<repositories>

@@ -9,7 +9,7 @@
 </parent>
 
 	<artifactId>com.sohlman.liferay.arquillian.integration.test</artifactId>
-	<name>Arquillian Liferay Extension Example</name>
+	<name>Arquillian Liferay Integration Extension Example</name>
 	<description>Arquillian Liferay Extension Example</description>
 
 	<properties>
