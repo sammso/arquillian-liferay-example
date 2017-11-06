@@ -8,6 +8,6 @@ DEBUG_OPTS="-agentlib:jdwp=transport=dt_socket,address=9000,server=y,suspend=n"
 
 CATALINA_OPTS="${CATALINA_OPTS} ${DEBUG_OPTS}"
 
-JACOCO_OPTS="-javaagent:../jacocoagent.jar=destfile=target/jacocoIntegration.exec,output=file,append=true,jmx=true,dumponexit=true"
+JACOCO_OPTS="-javaagent:../jacocoagent.jar=destfile=../target/jacoco.exec,output=file,append=true,jmx=true,dumponexit=true"
 
 CATALINA_OPTS="${CATALINA_OPTS} ${JACOCO_OPTS}"

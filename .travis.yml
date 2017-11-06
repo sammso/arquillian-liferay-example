@@ -11,7 +11,7 @@ install:
   - mvn generate-test-sources
 
 script:
-  - mvn install -Pjacoco jacoco:report coveralls:report
+  - mvn install -Pjacoco jacoco:report coveralls:report -PrepoToken=$COVERRALS_KEY
 
 after_success:
   - cat integration-test/target/site/jacoco/jacoco.xml

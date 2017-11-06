@@ -141,7 +141,6 @@
 								</goals>
 								<configuration>
 									<dataFile>${project.build.directory}/jacoco.exec</dataFile>
-									<dataFile>${project.build.directory}/jacocoIntegration.exec</dataFile>
 									<outputDirectory>${project.reporting.outputDirectory}/jacoco</outputDirectory>
 								</configuration>
 							</execution>
@@ -152,7 +151,14 @@
 						<artifactId>coveralls-maven-plugin</artifactId>
 						<version>4.3.0</version>
 						<configuration>
-							<repoToken>9iJO1VZ6xUb2U0rY8GIMwdnuKYF7VJ8pt</repoToken>
+							<jacocoReports>
+								<jacocoReport>${project.reporting.outputDirectory}/jacoco.exec</jacocoReport>
+							</jacocoReports>
+							<sourceDirectories>
+            					<sourceDirectory>helpers/src/main/java</sourceDirectory>
+            					<sourceDirectory>api/src/main/java</sourceDirectory>
+            					<sourceDirectory>service/src/main/java</sourceDirectory>
+							</sourceDirectories>
 						</configuration>
 					</plugin>
 				</plugins>
