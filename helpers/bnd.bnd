@@ -1,0 +1,6 @@
+Bundle-Name: ${project.name}
+Bundle-SymbolicName: ${project.artifactId}
+Bundle-Version: ${project.version}
+Export-Package: \
+	com.sohlman.liferay.arquillian.helper,\
+	com.sohlman.liferay.arquillian.util

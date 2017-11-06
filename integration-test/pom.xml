@@ -215,10 +215,16 @@
 	<dependencies>
 		<dependency>
 			<groupId>com.sohlman.liferay.arquillian</groupId>
-			<artifactId>com.sohlman.liferay.arquillian.api</artifactId>
+			<artifactId>com.sohlman.liferay.arquillian.helpers</artifactId>
 			<version>${project.version}</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>com.sohlman.liferay.arquillian</groupId>
+			<artifactId>com.sohlman.liferay.arquillian.api</artifactId>
+			<version>${project.version}</version>
+			<scope>test</scope>
+		</dependency>	
 		<dependency>
 			<groupId>com.liferay.portal</groupId>
 			<artifactId>com.liferay.portal.kernel</artifactId>
