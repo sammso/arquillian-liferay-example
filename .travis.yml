@@ -1,0 +1,22 @@
+jdk:
+  - oraclejdk8
+
+language: java
+
+before_install:
+  - rm -rf arquillian-liferay-bundle
+  - pip install --user codecov
+
+install:
+  - mvn generate-test-sources
+
+script:
+  - mvn install -Pjacoco
+
+after_success:
+  - cat integration-test/target/site/jacoco/jacoco.xml
+  - codecov
+
+after_failure:
+  - cat arquillian-liferay-bundle/liferay-portal-7.0-ce-ga3/tomcat-8.0.30/logs/catalina.out
+
