@@ -198,7 +198,7 @@
 								<phase>test-compile</phase>
 								<configuration>
 									<target>
-										<sleep seconds="200" />
+										<sleep seconds="250" />
 									</target>
 								</configuration>
 								<goals>
