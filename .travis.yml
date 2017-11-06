@@ -8,7 +8,7 @@ before_install:
   - pip install --user codecov
 
 install:
-  - mvn generate-test-sources
+  - mvn install
 
 script:
   - mvn install -Pjacoco jacoco:report coveralls:report
