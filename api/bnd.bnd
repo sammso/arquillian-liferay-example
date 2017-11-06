@@ -1,0 +1,9 @@
+Bundle-Name: com.sohlman.liferay.foo-api
+Bundle-SymbolicName: com.sohlman.liferay.foo.api
+Bundle-Version: 1.0.0-SNAPSHOT
+Export-Package:\
+	com.sohlman.liferay.foo.exception,\
+	com.sohlman.liferay.foo.model,\
+	com.sohlman.liferay.foo.service,\
+	com.sohlman.liferay.foo.service.persistence
+-includeresource: META-INF/service.xml=../service/service.xml

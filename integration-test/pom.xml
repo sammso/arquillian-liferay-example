@@ -198,7 +198,7 @@
 								<phase>test-compile</phase>
 								<configuration>
 									<target>
-										<sleep seconds="100" />
+										<sleep seconds="200" />
 									</target>
 								</configuration>
 								<goals>
@@ -213,6 +213,12 @@
 	</profiles>
 
 	<dependencies>
+		<dependency>
+			<groupId>com.sohlman.liferay.arquillian</groupId>
+			<artifactId>com.sohlman.liferay.arquillian.api</artifactId>
+			<version>${project.version}</version>
+			<scope>test</scope>
+		</dependency>
 		<dependency>
 			<groupId>com.liferay.portal</groupId>
 			<artifactId>com.liferay.portal.kernel</artifactId>
