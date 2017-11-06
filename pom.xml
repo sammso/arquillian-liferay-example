@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.sohlman.liferay.arquillian</groupId>
@@ -46,8 +47,8 @@
 				<scope>provided</scope>
 				<exclusions>
 					<exclusion>
-					<groupId>org.apache.xalan</groupId>
-					<artifactId>xalan</artifactId>
+						<groupId>org.apache.xalan</groupId>
+						<artifactId>xalan</artifactId>
 					</exclusion>
 				</exclusions>
 			</dependency>
@@ -59,8 +60,8 @@
 				<scope>provided</scope>
 				<exclusions>
 					<exclusion>
-					<groupId>org.apache.xalan</groupId>
-					<artifactId>xalan</artifactId>
+						<groupId>org.apache.xalan</groupId>
+						<artifactId>xalan</artifactId>
 					</exclusion>
 				</exclusions>
 			</dependency>
@@ -146,6 +147,14 @@
 							</execution>
 						</executions>
 					</plugin>
+					<plugin>
+						<groupId>org.eluder.coveralls</groupId>
+						<artifactId>coveralls-maven-plugin</artifactId>
+						<version>4.3.0</version>
+						<configuration>
+							<repoToken>9iJO1VZ6xUb2U0rY8GIMwdnuKYF7VJ8pt</repoToken>
+						</configuration>
+					</plugin>
 				</plugins>
 			</build>
 		</profile>
@@ -222,7 +231,7 @@
 						<version>2.0.37</version>
 					</dependency>
 				</dependencies>
-			</plugin>			
+			</plugin>
 		</plugins>
 	</build>
 

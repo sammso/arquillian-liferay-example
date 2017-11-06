@@ -11,12 +11,12 @@ install:
   - mvn generate-test-sources
 
 script:
-  - mvn install -Pjacoco
+  - mvn install -Pjacoco jacoco:report coveralls:report
 
 after_success:
   - cat integration-test/target/site/jacoco/jacoco.xml
   - codecov
 
 after_failure:
-  - cat arquillian-liferay-bundle/liferay-portal-7.0-ce-ga3/tomcat-8.0.30/logs/catalina.out
+  - cat arquillian-liferay-bundle/liferay-portal-7.0-ce-ga3/tomcat-8.0.32/logs/catalina.out
 
